@@ -1,0 +1,16 @@
+Dataset:  gold_target1.dat
+
+Source: N.R. Sahoo and H.S. Pandalai (1999). "Integration of Sparse Geologic
+Information in Gold Targeting Using Logistic Regression Analysis in the 
+Hutti-Maski Schist Belt, Raichur, Karnataka, India - A Case Study,"
+Natural Resources Research, Vol. 8, #3, pp. 233-250
+
+Description: Logistic Regression of Presence/Absent of gold deposit
+as a function of water/chemical factors: As, Sb, and presence/absence
+of lineament.
+
+Variables/Columns
+As level     1-8
+Sb level     10-16
+Lineament Proximity  24  /* 1=Present, 0 if absent  (0.5km)  */
+Gold deposit proximity  32  /* 1=Present, 0=absent  (0.5km)  */

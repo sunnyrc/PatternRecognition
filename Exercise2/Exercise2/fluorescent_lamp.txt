@@ -1,0 +1,23 @@
+Dataset:  fluorescent_lamp.dat
+
+Source: F.G. Rosillo and N.M. Chivelet (2009). "Lifetime Prediction of Fluorescent Lamps
+Used in Photovoltaic Systems," Lighting Research and Technology, Vol. 41, #2, pp.183-197.
+
+Description: Nonlinear regression, relating the ratio of observed to nominal lifetime for fluorescent
+lamps (Y=LT/LT_0) to integrated glow current (X1= I_glow) and the 
+ratio of observed to nominal voltage (X2=V_lamp/V_lampnom).
+Y = observed lifetime/advertised lifetime
+X1 = a measure of gas discharge
+X2 = observed voltage/advertised voltage (measure of performance of lamp and ballast)
+
+Model: Y = 1/(1+b0+b1*X1+b2*X2+b3*(X2^2))  + error
+
+Variables/Columns
+Model    7-8
+Type    9-16  /* F=Tube/Wattage/Diameter   C=Compact/watts
+#Lamps (sample size)  24
+LT/LT_0 = Y   26-32
+I_glow = X1   33-40
+V_Lamp       42-48
+V_Lampnom    50-56
+
